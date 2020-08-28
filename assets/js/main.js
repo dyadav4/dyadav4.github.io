@@ -14,17 +14,6 @@ $(window).on('load', function() {
 
 
 jQuery(document).ready(function($) {
-
-
-    /*======= Skillset *=======*/
-    
-    $('.level-bar-inner').css('width', '0');
-    
-    
-    
-    /* Bootstrap Tooltip for Skillset */
-    $('.level-label').tooltip();
-    
     
     /* jQuery RSS - https://github.com/sdepold/jquery-rss */
     
@@ -62,12 +51,6 @@ jQuery(document).ready(function($) {
         }
     );
     
-    /* Github Calendar - https://github.com/dyadav4/github-calendar */
-    new GitHubCalendar("#github-graph", "dyadav4");
-    
-    
-    /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
-    GitHubActivity.feed({ username: "mdo", selector: "#ghfeed" });
 
 
 });
