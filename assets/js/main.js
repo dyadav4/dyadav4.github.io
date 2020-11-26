@@ -1,56 +1,40 @@
-$(window).on('load', function() {
-
-    $('.level-bar-inner').each(function() {
-    
-        var itemWidth = $(this).data('level');
-        
-        $(this).animate({
-            width: itemWidth
-        }, 800);
-        
-    });
-
-});
-
 
 jQuery(document).ready(function($) {
-    
-    /* jQuery RSS - https://github.com/sdepold/jquery-rss */
-    
-    $("#rss-feeds").rss(
-    
-        //Change this to your own rss feeds
-        "https://feeds.feedburner.com/TechCrunch/startups",
-        
-        {
-        // how many entries do you want?
-        // default: 4
-        // valid values: any integer
-        limit: 3,
-        
-        // the effect, which is used to let the entries appear
-        // default: 'show'
-        // valid values: 'show', 'slide', 'slideFast', 'slideSynced', 'slideFastSynced'
-        effect: 'slideFastSynced',
-        
-        // will request the API via https
-	    // default: false
-	    // valid values: false, true
-	    ssl: true,
-        
-        // outer template for the html transformation
-        // default: "<ul>{entries}</ul>"
-        // valid values: any string
-        layoutTemplate: "<div class='items'>{entries}</div>",
-        
-        // inner template for each entry
-        // default: '<li><a href="{url}">[{author}@{date}] {title}</a><br/>{shortBodyPlain}</li>'
-        // valid values: any string
-        entryTemplate: '<div class="item"><h3 class="title"><a href="{url}" target="_blank">{title}</a></h3><div><p>{shortBodyPlain}</p><a class="more-link" href="{url}" target="_blank"><i class="fas fa-external-link-alt"></i>Read more</a></div></div>'
-        
-        }
-    );
-    
 
+    $.getJSON('assets/json/projects.json', function(){}).done(function(data){
+        $.each(data, function(i, item) {
+            if (i == 'latest'){
+                if(item && item[0]){
+                    var latestproj = item[0]
+                    $("#latestproj").append(
+                        '<div class="item featured text-center">'+
+                            '<div class="featured-image">'+
+                                '<a href='+latestproj.githublink+' target="_blank">'+
+                                '<img class="img-fluid project-image rounded shadow-sm" src='+latestproj.imgsrc+' alt="c_nmc" />'+
+                                '</a>'+
+                            '</div>'+
+                            '<h3 class="title mb-3"><a href='+latestproj.githublink+' target="_blank">'+latestproj.title+'</a></h3>'+
+                            '<div class="desc text-left">'+   
+                                '<p>'+latestproj.description+'</p>'+
+                            '</div>'+  
+                        '</div>'
+                    );
+                }
+            }else{
+                $.each(item, function(key,it){
+                    $("#othersproj").append(
+                        '<div class="item">'+
+                            '<a class="col-12" href='+it.githublink+' target="_blank">'+
+                                '<img class="img-fluid project-image rounded shadow-sm" src='+it.imgsrc+' alt="project name" />'+
+                                '<div class="desc col-12">'+
+                                    '<h3 class="title">'+it.title+'</h3>'+
+                                '</div>'+ 
+                            '</a>'+                   
+                        '</div>'
+                    );
+                })
+            }
+        });
+    })
 
 });

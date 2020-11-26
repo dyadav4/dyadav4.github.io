@@ -1,0 +1,42 @@
+{
+    "latest":[
+        {
+            "githublink": "https://github.com/dyadav4/HackerEarth-Deep-Learning-challenge-Keep-babies-safe",
+            "imgsrc": "assets/images/projects/babytoy.jpg",
+            "title":"HackerEarth Deep Learning challenge: Keep babies safe",
+            "description": "Deep Learning is an application of Artificial Intelligence (AI) that provides systems with the ability to automatically learn and improve from experience without being explicitly programmed. Deep Learning is a science that determines patterns in data. These patterns provide deeper meaning to problems and help you to first understand problems better and then solve the same with elegance. Here I applied unsupervised Deep Learning skills to build models that can extract, identify, and tag brand names of various products."
+        }
+    ],
+    "projects":[
+        {
+            "githublink": "https://github.com/dyadav4/C-NMC_Leukemia",
+            "imgsrc": "https://raw.githubusercontent.com/dyadav4/dyadav4.github.io/master/assets/images/projects/c_nmc.png",
+            "title":"Classification in Cancer Cell Imaging",
+            "description": "Deep learning has been proved to produce highly accurate machine learning models in many fields. Medical imaging processing is one of these fields where the use of deep learning classification models is helping in the diagnosis of many diseases. One of these diseases is cancer. An early detection of malignant cells in a patient increases the chances of correct treatment and survival. Studies have shown that computer-aided diagnosis models have improved diagnosis accuracy. However, when using imaging processing on a single node, many problems can arise. In order to overcome these problems, this project will focus on distributed deep learning. Deep learning pipelines include high-level APIs for scalable deep learning in Python with Apache Spark. By using Apache Spark, we will be able to reduce training time and run parallel experiments on many devices."
+        },
+        {
+            "githublink": "https://github.com/dyadav4/Part-of-Speech-Tagging-with-HMM",
+            "imgsrc": "assets/images/projects/pos.jpeg",
+            "title":"Part-of-Speech-Tagging-with-HMM",
+            "description": "Identifying part of speech tags is much more complicated than simply mapping words to their part of speech tags. This is because POS tagging is not something that is generic. It is quite possible for a single word to have a different part of speech tag in different sentences based on different contexts. That is why it is impossible to have a generic mapping for POS tags."
+        },
+        {
+            "githublink": "https://github.com/dyadav4/Autonomous-driving-application-car-detection",
+            "imgsrc": "assets/images/projects/autonomous.gif",
+            "title":"Object Detection for Autonomous Driving application using YOLO V2 on Tensorflow and Keras",
+            "description": "Given a set of images (a car detection dataset), the goal is to detect objects (cars) in those images using a pre-trained YOLO (You Only Look Once) model, with bounding boxes. Many of the ideas are from the two original YOLO papers: Redmon et al., 2016  and Redmon and Farhadi, 2016."
+        },
+        {
+            "githublink": "https://github.com/dyadav4/movie-sentiment-analysis",
+            "imgsrc": "assets/images/projects/sentiment.png",
+            "title":"Movie Sentiment Analysis using NLTK & Word2vec",
+            "description": "The evaluation of movie review text is a classification problem often called sentiment analysis. A popular technique for developing sentiment analysis models is to use a bag-of-words model that transforms documents into vectors where each word in the document is assigned a score."
+        },
+        {
+            "githublink": "https://github.com/dyadav4/2020-HackIllinois-Caterpillar-Anomaly-Detection",
+            "imgsrc": "assets/images/projects/anomaly.jpg",
+            "title":"Caterpillar Anomaly Detection",
+            "description": "This project I created at HackIllinois Hackathon at University of Illinois Urbana-Champaign. Caterpillar has a huge array of machines that collect millions of data points from their sensors. It's almost impossible to manually check to make sure all sensor readings are accurate which is why we use anomaly detection to determine what is working and what isn't. We can then use what we learn from channel predictions to help correct problems in data collection if there is a faulty sensor."
+        }
+    ]
+}
