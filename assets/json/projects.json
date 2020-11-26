@@ -9,6 +9,11 @@
     ],
     "projects":[
         {
+            "githublink": "https://mypages.iit.edu/~isense/",
+            "imgsrc": "assets/images/projects/iconsense.jpg",
+            "title":"iConsense Lab"
+        },
+        {
             "githublink": "https://github.com/dyadav4/C-NMC_Leukemia",
             "imgsrc": "https://raw.githubusercontent.com/dyadav4/dyadav4.github.io/master/assets/images/projects/c_nmc.png",
             "title":"Classification in Cancer Cell Imaging",

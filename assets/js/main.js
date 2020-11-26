@@ -23,14 +23,14 @@ jQuery(document).ready(function($) {
             }else{
                 $.each(item, function(key,it){
                     $("#othersproj").append(
-                        '<div class="item">'+
-                            '<a class="col-12" href='+it.githublink+' target="_blank">'+
+                        '<a href='+it.githublink+' target="_blank">'+
+                            '<div class="item">'+
                                 '<img class="img-fluid project-image rounded shadow-sm" src='+it.imgsrc+' alt="project name" />'+
                                 '<div class="desc col-12">'+
                                     '<h3 class="title">'+it.title+'</h3>'+
-                                '</div>'+ 
-                            '</a>'+                   
-                        '</div>'
+                                '</div>'+                  
+                            '</div>'+
+                        '</a>'
                     );
                 })
             }
