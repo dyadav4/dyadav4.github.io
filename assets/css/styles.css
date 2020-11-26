@@ -305,19 +305,21 @@ a.dotted-link:hover {
 #othersproj{
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
 }
 
 #othersproj .item {
   width: 15rem;
   margin: 10px;
+  height: 100%;
 }
 
-#othersproj .item:hover {
-  background-color: rgba(255, 0, 0, 0.5);
-}
-
-#othersproj .item a{
+#othersproj a{
   padding: 0;
+}
+
+#othersproj a:hover {
+  background-color: rgba(255, 0, 0, 0.5);
 }
 
 .projects .item .title {
