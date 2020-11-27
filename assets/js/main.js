@@ -28,6 +28,7 @@ jQuery(document).ready(function($) {
                                 '<img class="img-fluid project-image rounded shadow-sm" src='+it.imgsrc+' alt="project name" />'+
                                 '<div class="desc col-12">'+
                                     '<h3 class="title">'+it.title+'</h3>'+
+                                    '<p class="projdesc">'+it.description+'</p>'+
                                 '</div>'+                  
                             '</div>'+
                         '</a>'
