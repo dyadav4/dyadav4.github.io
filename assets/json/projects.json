@@ -11,7 +11,8 @@
         {
             "githublink": "https://mypages.iit.edu/~isense/",
             "imgsrc": "assets/images/projects/iconsense.jpg",
-            "title":"iConsense Lab"
+            "title":"iConsense Lab",
+            "description": ""
         },
         {
             "githublink": "https://github.com/dyadav4/C-NMC_Leukemia",
