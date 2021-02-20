@@ -1,145 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Dharamvir Kumar Yadav Portfolio</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bootstrap 4 Portfolio/Resume Theme for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico">  
-    
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
-    
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
-    
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
-    <!-- github activity css -->    
-    
-    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
-    
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    
-</head> 
 
+<title>Dharamvir Yadav</title>
+
+<!-- meta-tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Dharamvir Yadav" />
+<!-- //meta-tags -->
+
+<!-- Custom-Files -->
+<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS -->
+<link rel="stylesheet" href="css/style2.css" type="text/css" /> <!-- Style-CSS --> 
+<link rel="stylesheet" href="css/style3.css" type="text/css" media="all" /> <!-- Style-CSS -->
+<link href="css/font-awesome.css" rel="stylesheet"> <!-- Font-Awesome-Icons-CSS -->	
+<!-- //Custom-Files -->
+
+<!-- Web-Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700">
+<!-- //Web-Fonts -->
+
+<link rel="shortcut icon" href="images/favicon.ico" type="image/ico" />
+<!-- -->
+
+</head>
 <body>
 
-    <header class="header">
-        <div class="container clearfix">                       
-            <img class="profile-image img-fluid float-left rounded-circle" src="assets/images/profile.jpeg" alt="profile image" />
-            <div class="profile-content float-left">
-                <h1 class="name">Dharamvir Kumar Yadav</h1>
-                <ul class="social list-inline">
-                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/dharamvir-kumar-yadav/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="list-inline-item"><a href="https://github.com/dyadav4" target="_blank"><i class="fab fa-github-alt"></i></a></li>          
-                </ul> 
-            </div><!--//profile-->           
-        </div><!--//container-->
-    </header><!--//header-->
+	<!-- Un-Display image -->
+	<!-- <img src="images/ChelseaTolnai.png" alt="Chelsea Tolnai Full Stack Web Developer Porfolio" class="img-display-none" />  -->
 
-    <div class="container sections-wrapper">
-        <div class="row">
-            <div class="primary col-lg-12 col-12">
-    
-               <section class="latest section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Latest Projects</h2>
-                        <div id="projectcontent" class="content">
-                            
-                            <div id="latestproj"></div>
-                            <hr class="divider" />
-                            <div id="othersproj"></div>
-                            
-                        </div>
-                    </div>             
-                </section>
-                
-                <section class="experience section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Work Experience</h2>
-                        <div class="content">
+	<!-- Header -->
+	<!-- <div class="logo-w3layouts">
+		<h1><a href="index.html">Web Developer</a></h1>
+	</div>	 -->
+	<!-- <div class="banner-agile">
+		<div class="container">
+			<div class="banner-info-w3l">
+				<h2>Hi, I am Chelsea Tolnai</h2>
+				<h3>Full Stack Web Developer</h3>
+				<div class=banner-link-wrap>
+					<a href="https://www.linkedin.com/in/ChelseaTolnai/" target="#blank">
+						<span class="banner-link">
+							<i class="fa fa-linkedin"></i>
+						</span>
+					</a>
+					<a href="https://github.com/ChelseaTolnai" target="#blank">
+						<span class="banner-link">
+							<i class="fa fa-github"></i>
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div> -->
 
-                            <div class="item">
-                                <h3 class="title">Software Engineer - <span class="place"><a href="#">BurnAlong Inc.</a></span> <span class="year">(Feb 2017 - July 2019)</span></h3>
-                                <ul type="circle">
+	<!-- Navigation -->
+	<div class="nav-agile" id="mainnav">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
 
-                                    <li>Created hybrid Mobile Application for iOS and Android using React-Native, BurnAlong, from scratch which included registration, subscription, live conference, watching videos, online chat etc.</li>
-                                    <li>Integrated StoreKit for in-app purchases, Push Notifications, and different Social media authentication.</li>
-                                    <li>Integrated multiple React Native modules such as react-navigation, react-native-firebase and utilized Redux for transient app state.</li>
-                                    <li>Assisted in identifying, troubleshooting, and resolving defects encountered during various stages of project delivery, including during the deployment and implementation of the solution in production environment</li>
-                                    <li>Implemented collaborative and content-based recommender system using Python to provide personalized fitness program and classes to users depending on their subscription, ratings, history etc.</li>
-                                    <li>Used different techniques such as Cosine similarity, Pearson correlation and item based collaborative filtering to achieve RMSE of 0.9</li>
-                                    <li>Reviewed production data and reports to ensure data quality and integrity</li>
-                                </ul>
-                            </div><!--//item-->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right margin-top cl-effect-2">
+							<li><a class="scroll2" href="index.html"><span data-hover="Home">Home</span></a></li>
+							<li><a class="scroll" href="#skills"><span data-hover="Skills">Skills</span></a></li>
+							<li><a class="scroll" href="#portfolio"><span data-hover="Projects">Projects</span></a></li>
+							<li><a class="scroll" href="#about"><span data-hover="About">About</span></a></li>
+							<li><a class="scroll" href="#experience"><span data-hover="Experience">Experience</span></a></li>
+							<li><a class="scroll" href="#contact"><span data-hover="Contact">Contact</span></a></li>
+						</ul>
+						<div class="clearfix"></div>
+					</div><!-- /.navbar-collapse -->
+					<div class="clearfix"></div>
+			</nav>
+		</div>
+	</div>
+	<!-- //Navigation -->
 
-                            <div class="item">
-                                <h3 class="title">iOS Developer - <span class="place"><a href="#">Verizon Communications</a></span> <span class="year">(June 2016 - Feb 2017)</span></h3>
-                                <ul type="circle">
-                                    <li>Worked extensively with Swift 3.0, XCode 9 and UI Frameworks.</li>
-                                    <li>Involved in all aspects of application development including design, development and testing.</li>
-                                    <li>Consumed HTTPS Restful Services using Alamofire Framework and called and managed all request and response packets extensively in the NSOperation and NSThread.</li>
-                                    <li>Involved in iOS app build performance and functional tests using XCTest.</li>
-                                </ul>
-                                
-                            </div><!--//item-->
-                            
-                            <div class="item">
-                                <h3 class="title">Software Developer Intern - <span class="place"><a href="#">Element 74</a></span> <span class="year">(May 2015 - Dec 2015)</span></h3>
-                                <ul type="circle">
-                                    <li>Developed multitier web applications for customers and internal users using Visual Studio.</li>
-                                    <li>Developed, maintained and enhanced systems based on business requirements, using approved technologies and coding standards.</li>
-                                    <li>Developed UI using JavaScript, HTML, CSS, JavaScript validations and JSON and implemented interaction between frontend and backend using the JSON object.</li>
-                                </ul>
-                            </div><!--//item-->
-                            
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-                
-            </div><!--//primary-->
-            <div class="secondary col-lg-12 col-12">
-                
-                <aside class="education section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">                      
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> MSc Data Science</h3>
-                                <h4 class="university">Illinois Institute of Technology <span class="year">(2019-2021)</span></h4>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc Computer Information Systems</h3>
-                                <h4 class="university">Southeast Missouri State University <span class="year">(2011-2016)</span></h4>
-                            </div><!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-              
-            </div><!--//secondary-->    
-        </div><!--//row-->
-    </div><!--//masonry-->
- 
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
-    <!-- <script type="text/javascript" src="assets/plugins/popper.min.js"></script>  -->
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <!-- <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>  -->
-    <!-- github calendar plugin -->
-    <!-- <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script> -->
-    <!-- github activity plugin -->
-    <!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script> -->
-    <!-- <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script> -->
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+	<!-- //Header -->
+	
+<!-- main-section-starts-here -->
+	
+	<!--Skills-starts-here -->
+	<div class="wthreeskills" id="skills">
+		<div class="container">
+			<h3 class="agile-title">MY SKILLS</h3>
+
+			<div class="skills">
+				<ul>
+					<li>
+						<img class="skillimg" src="images/swift.jpeg"/>
+						<p class="skillname">Swift</p>
+						<div class="skillrating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+						</div>
+					</li>
+					<li>
+						<img class="skillimg" src="images/python.webp"/>
+						<p class="skillname">Python</p>
+						<div class="skillrating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+						</div>
+					</li>
+					<li>
+						<img class="skillimg" src="images/react_native.svg"/>
+						<p class="skillname">React Native</p>
+						<div class="skillrating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+					</li>
+					<li>
+						<img class="skillimg" src="images/html5.png"/>
+						<p class="skillname">HTML5</p>
+						<div class="skillrating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+						</div>
+					</li>
+					<li>
+						<img class="skillimg" src="images/css3.png"/>
+						<p class="skillname">CSS3</p>
+						<div class="skillrating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+						</div>
+					</li>
+					
+				</ul>
+			</div>
+			
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- //Skills-ends-here -->
+	
+	<!-- Portfolio-starts-here -->
+	<div id="portfolio" class="portfolio">
+		<div class="container">
+			<h3 class="agile-title">My Projects</h3>
+
+			<div class="portfolio__nav__container">
+				<button class="portfolio__nav__btn" data-btn-name="mobile-btn" onclick="getProjectsData('mobile')">Mobile Apps</button>
+				<button class="portfolio__nav__btn" data-btn-name="websites-btn" onclick="getProjectsData('web')">Websites</button>
+				<button class="portfolio__nav__btn" data-btn-name="machine-btn" onclick="getProjectsData('machine')">Machine / Deep Learning</button>
+			</div>
+
+			<div class="portfolio__items-container">
+				
+			</div>
+			<div class="clearfix"></div>
+		</div>  
+	</div>
+	<!-- Portfolio-ends-here -->
+	
+	<!-- About-starts-here -->
+	<div class="about" id="about">
+		<div class="container">
+			<h3 class="w3l_head">About Me</h3>
+			<div class="w3l-grids-about">
+				<div class="col-xs-6 col-sm-4 col-md-4 w3ls-ab-right">
+					<div class="agile-about-right-img">
+						<img src="images/kums.jpeg" alt="">
+					</div>
+				</div>
+
+				<div class="col-md-8 w3ls-agile-left">
+					<div class="w3ls-agile-left-info">
+						<div class="wel-left animated wow fadeInLeft" data-wow-delay=".5s">
+							<p>Hello! I'm Dharamvir, a software engineer with 4 years of work experience currently based in Chicago.</p>
+							<p>I enjoy building things that live on the internet, whether that be iOS mobile applications, websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.</p>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-8 w3ls-agile-left">
+					<div class="w3ls-agile-left-info">
+						<div class="wel-left animated wow fadeInLeft" data-wow-delay=".5s">
+							<div>
+								<ul style="display: flex;align-items: center;">
+									<li style="margin-right: 20px">
+										<a style="margin-bottom: 10px;" href="https://www.linkedin.com/in/dharamvir-kumar-yadav/" target="#blank">
+											<span class="about-link">
+												<i class="fa fa-linkedin"></i>
+												<span class="about-link-text"> /dharamvir-kumar-yadav</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="https://github.com/dyadav4" target="#blank">
+											<span class="about-link">
+												<i class="fa fa-github"></i>
+												<span class="about-link-text"> /dyadav4</span>
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							
+							<!-- <div class="clearfix"> </div> -->
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="clearfix"> </div> -->
+			</div>
+		</div>
+	</div>
+	<!-- //About-ends-here -->
+		
+	<!-- Experience-starts-here -->
+	<div class="aitsresumewthree" id="experience">
+		<div class="container">
+			<div class="aitsresumewthree-tag">
+				<h3 class="title">EXPERIENCE & EDUCATION</h3>
+			</div>
+			<div class="load_more">
+				<ul id="myList">
+					<li class="aitsaitsresumewthreeli-1">
+					</li>
+					<li>
+						<div class="l_g">
+							<div class="l_g_r g_r">
+								<div class="work">
+									<h4 class="title title2">EXPERIENCE</h4>
+									<div class="work-info"> 
+										<div class="col-md-6 work-grid work-left"> 
+											<h4>2019-PRESENT</h4>
+										</div>
+										<div class="col-md-6 work-grid work-right"> 
+											<h5>Research Assitant at Illinois Institute of Technology</h5>
+											<p>Developed and Redesigned iConsense website</p>
+										</div>
+										<div class="clearfix"> </div>
+									</div>									
+									<div class="work-info"> 
+										<div class="col-md-6 work-grid work-right work-right2"> 
+											<h4>2019 - 2019</h4>
+										</div>
+										<div class="col-md-6 work-grid work-left work-left2"> 
+											<h5>Sr. Mobile Developer at BurnAlong Inc.</h5>
+											<p>Developed iOS application from the scratch using Swift, XCode, Interface Builder, Instruments, Cocoa Touch, and other iOS development tools.</p>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="work-info"> 
+										<div class="col-md-6 work-grid work-left"> 
+											<h4>2016 - 2017</h4>
+										</div>
+										<div class="col-md-6 work-grid work-right"> 
+											<h5>iOS Developer at Verizon Communications</h5>
+											<p>Coded extensively with Swift 3.0, XCode 9 and UI Frameworks to develop the home dashboard of the Verizon app.</p>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="work-info"> 
+										<div class="col-md-6 work-grid work-right work-right2"> 
+											<h4>2015 - 2016</h4>
+										</div>
+										<div class="col-md-6 work-grid work-left work-left2"> 
+											<h5>Software Developer Intern at Element 74 Inc.</h5>
+											<p>Implemented Structural classes to generate UI elements dynamically over the screen based on the response received from JSON.</p>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="l_g">
+							<div class="l_g_r g_r">
+								<div class="work">
+									<h4 class="title title2">EDUCATION</h4>
+									<div class="work-info"> 
+										<div class="col-md-6 work-grid work-left"> 
+											<h4>2019 - 2021</h4>
+										</div>
+										<div class="col-md-6 work-grid work-right"> 
+											<h5>Illinois Institute of Technology, Chicago, IL</h5>
+											<p>Master's in Data Science</p>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="work-info"> 
+										<div class="col-md-6 work-grid work-right work-right2"> 
+											<h4>2011 - 2016</h4>
+										</div>
+										<div class="col-md-6 work-grid work-left work-left2"> 
+											<h5>Southeast Missouri State University, Cape Girardeau, MO</h5>
+											<p>Bachelor's in Computer Information Systems</p>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- //Experience-ends-here -->
+	
+	<!-- interests-starts-here -->
+	<div class="services" id="service"> 
+		<div>	 
+			<h3 class="agileits-title">OTHER INTERESTS</h3>
+			<div class="services-w3ls-row" style="display: flex;justify-content: center;align-items: center;">
+				<div class="col-md-3 services-grids">
+					<div class="w3agile-servs-img">
+						<div class="icon-holder">
+							<span class="fa fa-puzzle-piece icon" aria-hidden="true"></span>
+							<i class="fas fa-football-ball"></i>
+						</div>
+						<h4 class="mission">Sports</h4>
+						<p class="description">Football, Badminton, Cricket & Chess</p>
+					</div>
+				</div>
+				<!-- <div class="col-md-3 services-grids">
+					<div class="w3agile-servs-img">
+						<div class="icon-holder">
+							<span class="fa fa-camera icon" aria-hidden="true"></span>
+						</div>
+						<h4 class="mission">Photography</h4>
+						<p class="description">Personal Photography & Scrapbooking</p>
+					</div>
+				</div> -->
+				<div class="col-md-3 services-grids">
+					<div class="w3agile-servs-img">
+						<div class="icon-holder">
+							<span class="glyphicon glyphicon-tree-conifer" aria-hidden="true"></span>
+						</div>
+						<h4 class="mission">Outdoors & Nature</h4>
+						<p class="description">Hiking, Camping, Gardening</p>
+					</div>
+				</div> 
+				<!-- <div class="col-md-3 services-grids">
+					<div class="w3agile-servs-img">
+						<div class="icon-holder">
+							<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+						</div>
+						<h4 class="mission">Arts & Crafts</h4>
+						<p class="description">Yarn Work, Drawing, Painting</p>
+					</div>
+				</div> 	 -->
+				<div class="clearfix"> </div>
+			</div>	 			
+		</div>	 			
+	</div>			
+	<!-- //interests-ends-here -->
+
+	<!-- contact-starts-here -->
+	<div class="contact" id="contact">	
+		<h3 class="agile-contact"> Contact Me</h3>
+		<div class="contact-agile">
+			<div class="contact-left-agile">
+				<div class="contact-img"></div>
+				<div class="contact-tint"></div>
+				<h4>Dharamvir Yadav</h4>
+				<p>	iOS Developer with a passion for learning new languages and problem solving techniques.<br /> If you want to learn more about me or are interested in hiring, feel free to contact me.</p>				
+				<div class="add-w3ls-main">
+					<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+					<div class="add-w3ls2">
+						<h5>Email</h5>
+						<p><a href="dyadav4@hawk.iit.edu" target="blank">dyadav4@hawk.iit.edu</a></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="add-w3ls-main">
+					<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+					<div class="add-w3ls2">
+						<h5>Location</h5>
+						<p><a href="https://www.google.com/maps/place/Chicago,+IL/@41.8333925,-88.0121602,10z/data=!3m1!4b1!4m5!3m4!1s0x880e2c3cd0f4cbed:0xafe0a6ad09c0c000!8m2!3d41.8781136!4d-87.6297982" target="blank">Chicago, Illinois</a></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>    
+			<div class="contact-right-w3l">
+				<iframe src="https://maps.google.com/maps?q=Chicago,%20IL&t=&z=13&ie=UTF8&iwloc=&output=embed"> </iframe>
+			</div> 
+		</div>  
+		<div class="clearfix contact-clearfix"></div>
+
+	</div>  		
+	<!-- //contact-ends-here -->
+	
+	<!-- //main-section-ends-here -->
+
+	
+	<!-- Custom-JavaScript-Files -->
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> <!-- Default-JavaScript-File -->
+	<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
+	
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
-</html> 
-
+</html>

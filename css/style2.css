@@ -1,0 +1,30 @@
+.skills ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.skills ul li{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skills img{
+    height: 10rem;
+}
+.skills p{
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #777;
+    text-align: center;
+}
+.skills .skillrating .fa{
+    font-size: 2rem;
+}
+.skills .checked {
+    color: #07cb79;
+}
