@@ -8,25 +8,25 @@ jQuery(document).ready(function($) {
 
     $.getJSON('json/projects.json', function(){}).done(function(data){
         projectsdata = data
-        getProjectsData("mobile")
+        getProjectsData("mobile_proj", "mobile")
     })
 });
 
-function getProjectsData(type){
+function getProjectsData(id, type){
     switch(type) {
         case 'mobile':
             if(projectsdata && projectsdata.mobile_projects){
-                getProjectsUI(projectsdata.mobile_projects)
+                getProjectsUI(id, projectsdata.mobile_projects)
             }
             break
         case 'web':
             if(projectsdata && projectsdata.web_projects){
-                getProjectsUI(projectsdata.web_projects)
+                getProjectsUI(id, projectsdata.web_projects)
             }
             break
         case 'machine':
                 if(projectsdata && projectsdata.machine_projects){
-                    getProjectsUI(projectsdata.machine_projects)
+                    getProjectsUI(id, projectsdata.machine_projects)
                 }
                 break
         default:
@@ -34,37 +34,28 @@ function getProjectsData(type){
     }
 }
 
-function getProjectsUI(data) {
-    $(".portfolio__items-container").empty()
-    $.each(data, function(i, item) {
-        if(item){
-            $(".portfolio__items-container").append(
-                '<div class="portfolio__item">' +
-				  '<a target="_blank" href='+item.url+' style="display: flex;">'+
-					'<div style="width: 50%;padding: 10px;text-align: center;">'+
-						'<img src='+item.imgsrc+' class="portfolio__item__thumbnail" alt="burnalong" style="padding: 10px;">'+
-					'</div>'+
-					'<div style="padding: 10px;width: 50%;">'+
-						'<div>'+
-							'<h1 class="portfolio__item__info" style="text-align: left; font-size: 3rem; font-weight: bold;">'+item.title+'</h1>' +
-							'<p style="font-size: 1.6rem;">'+item.description+'</p>' +
-						'</div>' +
-						'<div style="position: absolute;bottom: 0;right: 0;margin: 10px;">' +
-                            '<p class="tools'+i+'" style="font-size: 1.6rem;"></p>' +
-						'</div>' +
-					'</div>' +
-				  '</a>' +
-				'</div>'
-            ).fadeIn('slow');
-            var tools = ""
-            for(var j = 0;j<item.tools.length;j++){
-                if(j == 0) {
-                    tools += "  |   " + item.tools[j] + "  |   "
-                }else{
-                    tools += item.tools[j] + "  |   "
-                }
+function getProjectsUI(id, data) {
+    if(data.length > 0){
+        $(".projects_tab").removeClass( "active");
+        $( "#"+id+" span" ).addClass( "active" );
+        $(".portfolio__items-container .card-deck").empty()
+        $.each(data, function(i, item) {
+            if(item){
+                $(".portfolio__items-container .card-deck").append(
+                    '<a target="_blank" href='+item.url+'>'+
+                        '<div class="card">'+
+                            '<img class="card-img-top" src='+item.imgsrc+' alt='+item.title+'>'+
+                            '<div class="card-block">'+
+                                '<h4 class="card-title">'+item.title+'</h4>'+
+                                '<p class="card-text">'+item.description+'</p>'+
+                            '</div>'+
+                            '<div class="card-footer">'+
+                                '<small class="text-muted">'+item.tools+'</small>'+
+                            '</div>'+
+                        '</div>'+
+                    '</a>'
+                );          
             }
-            $(".tools"+i).text(tools)            
-        }
-    });
+        });
+    }
 }

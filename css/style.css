@@ -11,6 +11,7 @@ body {
 	margin:0;
 	background:#FFF;
 	font-family: 'Nunito', sans-serif;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 body a {
 	transition:0.5s all;
@@ -319,8 +320,8 @@ span.glyphicon.glyphicon-search.edit {
 }
 .w3ls-agile-left-info p {
     color: #777;
-    font-size: 1em;
-    line-height: 1.9em;
+    font-size: 1.2em;
+    line-height: 1.7em;
     letter-spacing: 1px;
     margin-top: 10px;
 }
@@ -444,9 +445,7 @@ div#wthreeskills h3, .wthreeskills h3, .agile-title{
 	font-weight:400;
 	text-align:center;
 }
-.wthreeskills {
-	background-color: #eee;
-}
+
 .skills-break {
 	margin-left: 5px;
 	margin-right: 3px;
@@ -746,6 +745,7 @@ h3.agileits-title{
 /*-- experience-starts-here --*/
 .aitsresumewthree {
 	position: relative;
+	background-color: #eee;
 }
 
 .aitsresumewthree h4.title {
@@ -964,6 +964,7 @@ ul.simplefilter {
 /*-- contact-starts-here --*/
 .contact {
 	padding: 4em 0 0;
+	background-color: #eee;
 }
 
 .contact-left-agile {

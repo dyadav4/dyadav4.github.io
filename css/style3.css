@@ -11,26 +11,16 @@ blue: #8d94ba
     list-style-type: none;
   }
   
-  a {
-      color: white;
-      text-decoration: none;
-      color: #fff;
-  }
   a:hover{
-      color: white;
       text-decoration: none;
       text-transform: none;
       user-select: none;
-  }
-  a:focus{
-      color: white;
   }
   
   /*** Portfolio ***/
   
   .portfolio {
-    padding: 0 2em 3em;
-    background-color: #fff;
+    background-color: #eee;
     z-index: 4;
   }
   .portfolio__description {
@@ -43,8 +33,13 @@ blue: #8d94ba
     text-align: center;
   }
   .portfolio__nav__container {
-    max-width: 918px;
-    margin: 0 auto 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0;
+
+
+
+    /* margin: 0 auto 0.5em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -52,9 +47,41 @@ blue: #8d94ba
         -ms-flex-pack: center;
             justify-content: center;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    background-color: #07cb79;
+        flex-wrap: wrap; */
+    /* background-color: #07cb79; */
   }
+
+  .portfolio__nav__container p{
+    color: #777;
+    font-size: 2rem;
+  }
+
+  .portfolio__nav__container .projects_tab{
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .portfolio__nav__container .first_tab {
+    margin-left: 0;
+  }
+
+  .portfolio__nav__container .projects_tab.active{
+    color: #07cb79;
+  }
+
+  .portfolio__nav__container .projects_tab:hover{
+    color: #07cb79;
+  }
+
+
+
+
+
+
+
+
+
   .portfolio__nav__btn {
     width: 128px;
     margin: 1em 0.8em 0.8em;
@@ -100,18 +127,17 @@ blue: #8d94ba
     top: 100%;
   }
   .portfolio__items-container {
-    max-width: 932px;
     margin: 0 auto;
-    background-color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     overflow: hidden;
+    background-color: #eee;
   }
   .portfolio__item {
     display: block;
