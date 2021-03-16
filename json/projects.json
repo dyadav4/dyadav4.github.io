@@ -44,7 +44,7 @@
             "id": 5,
             "url": "https://github.com/dyadav4/HackerEarth-Deep-Learning-challenge-Keep-babies-safe",
             "imgsrc": "images/babytoy.jpg",
-            "title":"HackerEarth Deep Learning challenge: Keep babies safe",
+            "title":"HackerEarth challenge: Keep babies safe",
             "description": "Here I applied unsupervised Deep Learning skills to build models that can extract, identify, and tag brand names of various products.",
             "type": "machine",
             "tools": "Python3, Tensorflow, Beautiful Soup, CNN"
@@ -71,7 +71,7 @@
             "id": 4,
             "url": "https://github.com/dyadav4/Autonomous-driving-application-car-detection",
             "imgsrc": "images/autonomous.gif",
-            "title":"Object Detection for Autonomous Driving application using YOLO V2 on Tensorflow and Keras",
+            "title":"Object Detection for Autonomous Driving",
             "description": "Given a set of images (a car detection dataset), the goal is to detect objects (cars) in those images using a pre-trained YOLO (You Only Look Once) model, with bounding boxes.",
             "type": "machine",
             "tools": "Python, Tensorflow, YOLO"
@@ -80,7 +80,7 @@
             "id": 1,
             "url": "https://github.com/dyadav4/movie-sentiment-analysis",
             "imgsrc": "images/sentiment.png",
-            "title":"Movie Sentiment Analysis using NLTK & Word2vec",
+            "title":"Movie Sentiment Analysis",
             "description": "The evaluation of movie review text is a classification problem often called sentiment analysis. A popular technique for developing sentiment analysis models is to use a bag-of-words model that transforms documents into vectors where each word in the document is assigned a score.",
             "type": "machine",
             "tools": "Python, NLP, NLTK, word2vec"
