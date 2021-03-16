@@ -1,4 +1,5 @@
 var projectsdata = null
+
 jQuery(document).ready(function($) {
     console.log('document loaded')
     $(".scroll").click(function(event){		
@@ -7,8 +8,11 @@ jQuery(document).ready(function($) {
     });
 
     $.getJSON('json/projects.json', function(){}).done(function(data){
-        projectsdata = data
-        getProjectsData("mobile_proj", "mobile")
+        if (data) {
+            projectsdata = data
+            getProjectsData("mobile_proj", "mobile")
+        }
+        
     })
 });
 
@@ -16,7 +20,8 @@ function getProjectsData(id, type){
     switch(type) {
         case 'mobile':
             if(projectsdata && projectsdata.mobile_projects){
-                getProjectsUI(id, projectsdata.mobile_projects)
+                var mobile_data = projectsdata.mobile_projects.sort((a, b) => parseFloat(b.id) - parseFloat(a.id));
+                getProjectsUI(id, mobile_data)
             }
             break
         case 'web':
@@ -45,10 +50,10 @@ function getProjectsUI(id, data) {
                     '<a target="_blank" href='+item.url+'>'+
                         '<div class="card">'+
                             '<img class="card-img-top" src='+item.imgsrc+' alt='+item.title+'>'+
-                            '<div class="card-block">'+
-                                '<h4 class="card-title">'+item.title+'</h4>'+
-                                '<p class="card-text">'+item.description+'</p>'+
-                            '</div>'+
+                            // '<div class="card-block">'+
+                            //     '<h4 class="card-title">'+item.title+'</h4>'+
+                            //     '<p class="card-text">'+item.description+'</p>'+
+                            // '</div>'+
                             '<div class="card-footer">'+
                                 '<small class="text-muted">'+item.tools+'</small>'+
                             '</div>'+
