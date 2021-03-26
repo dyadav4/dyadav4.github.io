@@ -65,7 +65,6 @@
     min-height: 15rem;
     max-height: 35rem;
     margin: 0px;
-    object-fit: contain;
     border-top-right-radius: calc(.25rem - 1px);
     border-top-left-radius: calc(.25rem - 1px);
 }
