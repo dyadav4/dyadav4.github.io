@@ -26,6 +26,15 @@
             "description": "",
             "type": "mobile",
             "tools": "Swift5, XCode, UIKit, Alamofire, XCTests"
+        },
+        {
+            "id": 4,
+            "url": "https://github.com/dyadav4/FindErr",
+            "title":"FindErr",
+            "imgsrc": "images/finderr.png",
+            "description": "",
+            "type": "mobile",
+            "tools": "XCode, Swift5, MapKit, CoreLocation, CoreData, Network, StoryBoard, XIB"
         }
    ],
    "web_projects": [

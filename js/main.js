@@ -49,17 +49,13 @@ function getProjectsUI(id, data) {
                 $(".portfolio__items-container .card-deck").append(
                     '<a target="_blank" href='+item.url+'>'+
                         '<div class="card">'+
-                            '<div class="card-title">'+
-                            '<h3>'+item.title+'</h3>'+
-                            '</div>'+
                             '<img class="card-img-top" src='+item.imgsrc+' alt='+item.title+'>'+
-                            // '<div class="card-block">'+
-                            //     '<h4 class="card-title">'+item.title+'</h4>'+
-                            //     '<p class="card-text">'+item.description+'</p>'+
-                            // '</div>'+
-                            '<div class="card-footer">'+
-                                '<small class="text-muted">'+item.tools+'</small>'+
+                        '</div>'+
+                        '<div class="card-footer">'+
+                            '<div class="card-title">'+
+                                '<h3>'+item.title+'</h3>'+
                             '</div>'+
+                            '<small class="text-muted">'+item.tools+'</small>'+
                         '</div>'+
                     '</a>'
                 );          
