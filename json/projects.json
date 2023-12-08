@@ -1,13 +1,31 @@
 {
    "mobile_projects": [
-        {
-            "id": 1,
-            "url": "https://apps.apple.com/us/app/my-verizon/id416023011",
-            "title":"My Verizo‪n‬",
-            "imgsrc": "images/verizon.png",
-            "description": "Developed and Redesigned the main dashboard of the home tab and migrated code from Objective-C to Swift 3.",
+       {
+            "id": 5,
+            "url": "https://apps.apple.com/us/app/citi-mobile/id301724680",
+            "title":"Citi Mobile",
+            "imgsrc": "images/citibank.png",
+            "description": "This app provides options for customers to trade in stocks or mutuals funds",
             "type": "mobile",
-            "tools": "Swift, XCode, Alamofire, UI Frameworks, XCAssets"
+            "tools": "XCode, Swift5, Request Builder, StoryBoard, XIB"
+        },
+        {
+            "id": 4,
+            "url": "https://github.com/dyadav4/FindErr",
+            "title":"FindErr",
+            "imgsrc": "images/finderr.png",
+            "description": "",
+            "type": "mobile",
+            "tools": "XCode, Swift5, MapKit, CoreLocation, CoreData, Network, StoryBoard, XIB"
+        },
+        {
+            "id": 3,
+            "url": "https://github.com/dyadav4/Talkie",
+            "title":"Talkie",
+            "imgsrc": "images/talkies.png",
+            "description": "This app provides details of new or upcoming movies",
+            "type": "mobile",
+            "tools": "Swift5, XCode, UIKit, Alamofire, XCTests"
         },
         {
             "id": 2,
@@ -19,22 +37,13 @@
             "tools": "Swift, XCode, Interface Builder, Instruments, XCAssets"
         },
         {
-            "id": 3,
-            "url": "https://github.com/dyadav4/Talkie",
-            "title":"Talkie",
-            "imgsrc": "images/talkies.png",
-            "description": "",
+            "id": 1,
+            "url": "https://apps.apple.com/us/app/my-verizon/id416023011",
+            "title":"My Verizo‪n‬",
+            "imgsrc": "images/verizon.png",
+            "description": "Developed and Redesigned the main dashboard of the home tab and migrated code from Objective-C to Swift 3.",
             "type": "mobile",
-            "tools": "Swift5, XCode, UIKit, Alamofire, XCTests"
-        },
-        {
-            "id": 4,
-            "url": "https://github.com/dyadav4/FindErr",
-            "title":"FindErr",
-            "imgsrc": "images/finderr.png",
-            "description": "",
-            "type": "mobile",
-            "tools": "XCode, Swift5, MapKit, CoreLocation, CoreData, Network, StoryBoard, XIB"
+            "tools": "Swift, XCode, Alamofire, UI Frameworks, XCAssets"
         }
    ],
    "web_projects": [
