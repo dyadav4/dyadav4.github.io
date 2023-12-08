@@ -1,0 +1,107 @@
+{
+   "mobile_projects": [
+        {
+            "id": 1,
+            "url": "https://apps.apple.com/us/app/my-verizon/id416023011",
+            "title":"My Verizo‪n‬",
+            "imgsrc": "images/verizon.png",
+            "description": "Developed and Redesigned the main dashboard of the home tab and migrated code from Objective-C to Swift 3.",
+            "type": "mobile",
+            "tools": "Swift, XCode, Alamofire, UI Frameworks, XCAssets"
+        },
+        {
+            "id": 2,
+            "url": "https://apps.apple.com/us/app/burnalong/id1188438471",
+            "title":"BurnAlong",
+            "imgsrc": "images/burnalong.png",
+            "description": "This app provides classes and coaching for physical, emotional, mental, and even financial wellness. From anywhere in the world, users can access complete programs to address a wide range of health challenges: from prenatal to aging, coping with disabilities, or managing chronic conditions like diabetes, insomnia, cancer, stress and so much more.",
+            "type": "mobile",
+            "tools": "Swift, XCode, Interface Builder, Instruments, XCAssets"
+        },
+        {
+            "id": 3,
+            "url": "https://github.com/dyadav4/Talkie",
+            "title":"Talkie",
+            "imgsrc": "images/talkies.png",
+            "description": "",
+            "type": "mobile",
+            "tools": "Swift5, XCode, UIKit, Alamofire, XCTests"
+        },
+        {
+            "id": 4,
+            "url": "https://github.com/dyadav4/FindErr",
+            "title":"FindErr",
+            "imgsrc": "images/finderr.png",
+            "description": "",
+            "type": "mobile",
+            "tools": "XCode, Swift5, MapKit, CoreLocation, CoreData, Network, StoryBoard, XIB"
+        }
+   ],
+   "web_projects": [
+        {
+            "id": 1,
+            "url": "https://mypages.iit.edu/~isense/new_v1",
+            "imgsrc": "images/iconsense.jpg",
+            "title":"iConsense Lab",
+            "description": "Redesigned the whole iConsense web app using React.",
+            "type": "web",
+            "tools": "React.js, Hooks, MaterialUI, StyledDiv"
+        }
+   ],
+    "machine_projects":[
+        {
+            "id": 5,
+            "url": "https://github.com/dyadav4/HackerEarth-Deep-Learning-challenge-Keep-babies-safe",
+            "imgsrc": "images/babytoy.jpg",
+            "title":"HackerEarth challenge: Keep babies safe",
+            "description": "Here I applied unsupervised Deep Learning skills to build models that can extract, identify, and tag brand names of various products.",
+            "type": "machine",
+            "tools": "Python3, Tensorflow, Beautiful Soup, CNN"
+        },
+        {
+            "id": 2,
+            "url": "https://github.com/dyadav4/C-NMC_Leukemia",
+            "imgsrc": "images/c_nmc.png",
+            "title":"Classification in Cancer Cell Imaging",
+            "description": "This project focus on distributed deep learning. Deep learning pipelines include high-level APIs for scalable deep learning in Python with Apache Spark. By using Apache Spark, we will be able to reduce training time and run parallel experiments on many devices.",
+            "type": "machine",
+            "tools": "Python, SageMaker, Pyspark, AWS"
+        },
+        {
+            "id": 3,
+            "url": "https://github.com/dyadav4/Part-of-Speech-Tagging-with-HMM",
+            "imgsrc": "images/pos.jpeg",
+            "title":"Part-of-Speech-Tagging-with-HMM",
+            "description": "Identifying part of speech tags.",
+            "type": "machine",
+            "tools": "Python, NLP"
+        },
+        {
+            "id": 4,
+            "url": "https://github.com/dyadav4/Autonomous-driving-application-car-detection",
+            "imgsrc": "images/autonomous.gif",
+            "title":"Object Detection for Autonomous Driving",
+            "description": "Given a set of images (a car detection dataset), the goal is to detect objects (cars) in those images using a pre-trained YOLO (You Only Look Once) model, with bounding boxes.",
+            "type": "machine",
+            "tools": "Python, Tensorflow, YOLO"
+        },
+        {
+            "id": 1,
+            "url": "https://github.com/dyadav4/movie-sentiment-analysis",
+            "imgsrc": "images/sentiment.png",
+            "title":"Movie Sentiment Analysis",
+            "description": "The evaluation of movie review text is a classification problem often called sentiment analysis. A popular technique for developing sentiment analysis models is to use a bag-of-words model that transforms documents into vectors where each word in the document is assigned a score.",
+            "type": "machine",
+            "tools": "Python, NLP, NLTK, word2vec"
+        },
+        {
+            "id": 6,
+            "url": "https://github.com/dyadav4/2020-HackIllinois-Caterpillar-Anomaly-Detection",
+            "imgsrc": "images/anomaly.jpg",
+            "title":"Caterpillar Anomaly Detection",
+            "description": "Caterpillar collect millions of data points from their sensors. We used anomaly detection to determine what is working and what isn't. We can then use what we learn from channel predictions to help correct problems in data collection if there is a faulty sensor.",
+            "type": "machine",
+            "tools": "Python, Keras, Jupyter-notebook, DeepAnT"
+        }
+    ]
+}
