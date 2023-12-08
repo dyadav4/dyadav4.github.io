@@ -4,7 +4,7 @@
             "id": 5,
             "url": "https://apps.apple.com/us/app/citi-mobile/id301724680",
             "title":"Citi Mobile",
-            "imgsrc": "images/citibank.png",
+            "imgsrc": "images/finderr.png",
             "description": "This app provides options for customers to trade in stocks or mutuals funds",
             "type": "mobile",
             "tools": "XCode, Swift5, Request Builder, StoryBoard, XIB"
